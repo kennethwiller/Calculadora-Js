@@ -1,4 +1,8 @@
 function inserir(num) {
+
+    const resultadoEl = document.getElementById('resultado');
+    
+    if (resultadoEl.innerHTML.length > 20) return;
     
     let numero = document.getElementById('resultado').innerHTML;
     document.getElementById('resultado').innerHTML = numero + num ;
